@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Product({products}) {
+function Product({products, AddToCart}) {
   return (
     <div>
         <h1 className='my-10 text-3xl'>Shopping now</h1>
@@ -31,7 +31,9 @@ function Product({products}) {
                             </div>
                         </div>
 
-                        <button className='bg-green-600 w-full rounded-full py-1'>Add</button>
+                        <button
+                            onClick={() => AddToCart(product)}
+                            className='bg-green-600 w-full rounded-full py-1'>Add</button>
 
                     </div>
 
