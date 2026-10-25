@@ -10,8 +10,10 @@ function PageLayout({user}) {
             <Header user={user}/>
         </header>
 
-        <main>
-            <Outlet />
+        <main className='flex justify-center'>
+            <div className='w-7xl'>
+              <Outlet />
+            </div>
         </main>
     </>
   )
