@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Header({user, cart}) {
+    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+
+
   return (
     <div className='w-7xl h-full flex items-center justify-between'>
         <div>
@@ -20,7 +23,7 @@ function Header({user, cart}) {
             <Link to="/cart" className='relative'>
                 <i className="fa-solid fa-cart-plus text-2xl"></i>
                 <div className='bottom-5 left-5 absolute w-4 h-4 flex justify-center items-center rounded-full bg-red-600'>
-                    <span className='text-[8px] text-gray-50'> {cart.length} </span>
+                    <span className='text-[8px] text-gray-50'> {cartCount} </span>
                 </div>
             </Link>
 
