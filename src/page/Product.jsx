@@ -23,11 +23,11 @@ function Product({products, AddToCart}) {
                             </div>
 
                             <div className='flex justify-end my-2'>
-                                { product.rate.one ? <i class="fa-solid fa-star"></i> : <i class="fa-regular fa-star"></i> }
-                                { product.rate.two ? <i class="fa-solid fa-star"></i> : <i class="fa-regular fa-star"></i> }
-                                { product.rate.three ? <i class="fa-solid fa-star"></i> : <i class="fa-regular fa-star"></i> }
-                                { product.rate.four ? <i class="fa-solid fa-star"></i> : <i class="fa-regular fa-star"></i> }
-                                { product.rate.five ? <i class="fa-solid fa-star"></i> : <i class="fa-regular fa-star"></i> }
+                                { product.rate.one ? <i className="fa-solid fa-star"></i> : <i className="fa-regular fa-star"></i> }
+                                { product.rate.two ? <i className="fa-solid fa-star"></i> : <i className="fa-regular fa-star"></i> }
+                                { product.rate.three ? <i className="fa-solid fa-star"></i> : <i className="fa-regular fa-star"></i> }
+                                { product.rate.four ? <i className="fa-solid fa-star"></i> : <i className="fa-regular fa-star"></i> }
+                                { product.rate.five ? <i className="fa-solid fa-star"></i> : <i className="fa-regular fa-star"></i> }
                             </div>
                         </div>
 
